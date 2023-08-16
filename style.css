@@ -1,0 +1,83 @@
+*::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right, red, yellow);
+
+
+    background-color: hsl(120, 100%, 50%);
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+#color1 {
+    cursor: pointer;
+}
+
+#color2 {
+    cursor: pointer;
+}
+
+#rgb-text, #hue-text {
+    font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+button {
+    font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .8);
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 11px;
+}
+
+.sliders {
+    font: 600 .8em 'Raleway', sans-serif;
+
+    position: relative;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: left;
+    width: 450px;
+    margin-top: 10px;
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.rangeValue {
+    position: absolute;
+    margin-left: 5px;
+}
+
+.slider {
+    cursor: pointer;
+    width: 400px;
+}

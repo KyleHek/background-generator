@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>DOM Background Generator</title>
+</head>
+<body id="gradient">
+    <h1>Background Generator</h1>
+    <input id="color1" type="color" name="color1" value="#00ff00">
+    <input id="color2" type="color" name="color2" value="#ff0000">
+    <br>
+    <button type="button" id="random">Randomize</button>
+    <div class="sliders">
+        <div>
+            <p>Hue</p><input class="slider" id="hue" type="range" min="0" max="360" value="360" name="hue" oninput="rangeValue1.innerText = this.value"><span class="rangeValue" id="rangeValue1">360</span>
+        </div>
+        <div>
+            <p>Saturation</p><input class="slider" id="saturation" type="range" min="0" max="100" value="100" name="saturation" oninput="rangeValue2.innerText = this.value"><span class="rangeValue" id="rangeValue2">100</span>
+        </div>
+        <div>
+            <p>Lightness</p><input class="slider" id="lightness" type="range" min="0" max="100" value="50" name="lightness" oninput="rangeValue3.innerText = this.value"><span class="rangeValue" id="rangeValue3">50</span>
+        </div>
+    </div>
+    <h2>Current CSS Background</h2>
+    <div id="rgb-text"></div>
+    <div id="hue-text"></div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
